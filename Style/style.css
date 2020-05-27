@@ -4,10 +4,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #map{
     height:100vh;
 
 }
+
 .title{
     position: absolute;
     top:100px;
@@ -17,4 +19,40 @@ body {
     font-weight:bold;
     text-transform: uppercase;
     color:#333
+}
+
+.search-container{
+    width: 400px;
+    height:60px;
+    position:absolute;
+    top:230px;
+    left:100px;
+    z-index:30;
+    background-color:#454E43;
+    border-radius: 30px;
+}
+
+.search{
+    height :100%;
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.search input{
+    width:100%;
+    font-size:25px;
+    border:none;
+    background-color: transparent;
+    color:whitesmoke;
+}
+
+.search input:focus{
+    outline:none;
+}
+
+.serach i{
+    color: white;
+    font-size: 25px;
 }
