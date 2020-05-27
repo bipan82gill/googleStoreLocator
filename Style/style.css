@@ -67,3 +67,12 @@ body {
     border-radius:30px;
     bottom:20px;
 }
+.store-container{
+    padding:20px;
+    font-size: 15px;
+    
+}
+.store-phone-number{
+    font-weight: bold;
+    font-size: 20px;
+}
