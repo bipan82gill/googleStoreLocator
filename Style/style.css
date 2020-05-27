@@ -56,3 +56,14 @@ body {
     color: white;
     font-size: 25px;
 }
+
+.stores-list-container{
+    width:400px;
+    background-color:white;
+    position:absolute;
+    top:320px;
+    left:100px;
+    z-index:40;
+    border-radius:30px;
+    bottom:20px;
+}
