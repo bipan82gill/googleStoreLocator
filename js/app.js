@@ -39,14 +39,17 @@ var markers =[];
     }
 
         function showStoresMarkers() {
+            var bounds = new google.maps.LatLngBounds();
             stores.forEach(function(store, index) {
                 var latlng = new google.maps.LatLng(
                     store.coordinates.latitude,
                     store.coordinates.longitude);
                     var name = store.name;
                     var address = store.addressLines[0];
+                    bounds.extend(latlng);
                     createMarker(latlng, name, address);
             });
+            map.fitBounds(bounds);
         }
         function createMarker(latlng, name, address){
             var html = "<b>" + name + "</b><br/>" + address;
