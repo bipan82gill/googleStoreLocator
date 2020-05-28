@@ -85,11 +85,13 @@ body {
 .stores-list{
     padding-left:20px;
     padding-right:20px;
+    overflow-y:scroll;
+    height:100%;
 }
 .store-address{
     font-size: 21px;
     color: #514C4C;
-    margin-top:30px;
+    margin-top:25px;
 }
 .store-address span{
     display: block;

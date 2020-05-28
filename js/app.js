@@ -17,19 +17,21 @@ var map;
         }
           function displayStores() {
               var storesHtml = "";
-                stores.forEach(function(store){
+                stores.forEach(function(store, index){
+                    var address = store.addressLines;
+                    var phone =store.phoneNumber;
                     storesHtml +=`
                     <div class ="store-container">
                         <div class ="store-info-container">
                             <div class ="store-address">
-                                 <span>8480 Beverly Blvd</span>
-                                 <span>Los Angeles, CA 90048</span>
+                                 <span>${address[0]}</span>
+                                 <span>${address[1]}</span>
                             </div>
-                         <div class ="store-phone-number">345-879-9809</div>
+                         <div class ="store-phone-number">${phone}</div>
                         </div>
                         <div class="store-number-container">
                             <div class ="store-number">
-                             1
+                             ${index+1}
                             </div>
                         </div>
                     </div>`
