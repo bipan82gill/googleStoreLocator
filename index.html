@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search store on google map</title>
     <link rel ="stylesheet" href ="style/style.css">
+    
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="js/store-data.js"></script>
 </head>
 <body>
     <div class ="title">Store Locator</div>
@@ -37,26 +39,9 @@
     </div>
 
     <div id="map"></div>
-    <script>
-        var map;
-        function initMap() {
-            var losAngeles = {
-                lat : 34.063380,
-                lng: -118.358080
-            }
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: losAngeles,
-            zoom: 8
-          });
-          var marker = new google.maps.Marker({
-              position: losAngeles,
-              map:map
-          }
-          )
-        }
-      </script>
-
+    <script src ="js/app.js"> </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap"
-    async defer></script>  
+    async defer></script> 
+   
 </body>
 </html>
