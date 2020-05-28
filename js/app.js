@@ -1,5 +1,6 @@
 var map;
 var markers =[];
+var infoWindow;
         function initMap() {
             var losAngeles = {
                 lat : 34.063380,
@@ -9,7 +10,7 @@ var markers =[];
             center: losAngeles,
             zoom: 8
           });
-          
+          infoWindow = new google.maps.InfoWindow();
           displayStores()
           showStoresMarkers()
         }
