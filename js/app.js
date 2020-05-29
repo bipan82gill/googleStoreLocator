@@ -47,18 +47,35 @@ var infoWindow;
                     store.coordinates.longitude);
                     var name = store.name;
                     var address = store.addressLines[0];
+                    var statusText = store.openStatusText;
+                    var phone = store.phoneNumber;
                     bounds.extend(latlng);
-                    createMarker(latlng, name, address);
+                    createMarker(latlng, name, address, statusText, phone);
             });
             map.fitBounds(bounds);
         }
-        function createMarker(latlng, name, address){
-            var html = "<b>" + name + "</b><br/>" + address;
+        function createMarker(latlng, name, address, statusText, phone){
+             var html = `
+             <div class ="store-info-window">
+                <div class ="store-info-name">
+                    ${name}
+                </div>
+                <div class ="store-info-status">
+                    ${statusText}
+                </div>
+                <div class ="store-info-address">
+                    ${address}
+                </div>
+                <div class ="store-info-phone">
+                    ${phone}
+                </div>
+             </div>
+             `
             var marker = new google.maps.Marker({
                 map: map,
                 position: latlng
             });
-            google.maps.event.addListener(marker, 'click', function(){
+            google.maps.event.addListener(marker, 'mouseover', function(){
                 infoWindow.setContent(html);
                 infoWindow.open(map, marker);
             });
