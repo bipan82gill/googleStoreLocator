@@ -13,6 +13,18 @@ var infoWindow;
           infoWindow = new google.maps.InfoWindow();
           displayStores()
           showStoresMarkers()
+          setOnClickListener()
+        }
+
+        function setOnClickListener(){
+            console.log(markers);
+            var storeElements = document.querySelectorAll('.store-container');
+            storeElements.forEach(function(elem, index){
+                elem.addEventListener('click', function(){
+                    google.maps.event.trigger(markers[index], 'click');
+                   console.log(elem)
+                })
+            });
         }
 
           function displayStores() {
@@ -79,9 +91,10 @@ var infoWindow;
              `
             var marker = new google.maps.Marker({
                 map: map,
-                position: latlng
+                position: latlng,
+               
             });
-            google.maps.event.addListener(marker, 'mouseover', function(){
+            google.maps.event.addListener(marker, 'click', function(){
                 infoWindow.setContent(html);
                 infoWindow.open(map, marker);
             });
