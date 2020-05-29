@@ -64,9 +64,15 @@ var infoWindow;
                     ${statusText}
                 </div>
                 <div class ="store-info-address">
+                    <div class ="circle">
+                        <i class="fas fa-location-arrow"></i>
+                    </div>
                     ${address}
                 </div>
                 <div class ="store-info-phone">
+                    <div class ="circle">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
                     ${phone}
                 </div>
              </div>

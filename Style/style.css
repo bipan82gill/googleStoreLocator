@@ -110,3 +110,35 @@ body {
     align-items: center;
     border-radius: 50%;
 }
+.store-info-window{
+    min-width:300px;
+    font-size:18px;
+    padding:8px;
+    
+}
+.store-info-name{
+    font-size:24px;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.87);
+}
+.store-info-status{
+    margin-top:8px;
+    border-bottom: 1px solid  #00000029;
+    padding-bottom: 6px;
+}
+.store-info-address,.store-info-phone{
+    margin-top:8px;
+    display:flex;
+    align-items: center;
+}
+.circle{
+    width:30px;
+    height:30px;
+    margin-right:8px;
+    background-color: #1985A1;
+    border-radius:50%;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
