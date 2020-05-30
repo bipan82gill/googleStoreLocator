@@ -62,11 +62,11 @@ var infoWindow;
                     var statusText = store.openStatusText;
                     var phone = store.phoneNumber;
                     bounds.extend(latlng);
-                    createMarker(latlng, name, address, statusText, phone);
+                    createMarker(latlng, name, address, statusText, phone, index);
             });
             map.fitBounds(bounds);
         }
-        function createMarker(latlng, name, address, statusText, phone){
+        function createMarker(latlng, name, address, statusText, phone, index){
              var html = `
              <div class ="store-info-window">
                 <div class ="store-info-name">
@@ -92,6 +92,7 @@ var infoWindow;
             var marker = new google.maps.Marker({
                 map: map,
                 position: latlng,
+                label:`${index+1}`
                
             });
             google.maps.event.addListener(marker, 'click', function(){
