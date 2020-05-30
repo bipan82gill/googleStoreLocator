@@ -79,6 +79,7 @@ body {
 .store-container{
     display:flex;
     border-bottom: 1px solid #979797; 
+    cursor: pointer;
 }
 
 .store-info-container{
@@ -101,7 +102,7 @@ body {
 
 .store-address{
     font-size: 21px;
-    color: #514C4C;
+    color: rgb(22, 21, 21);
     margin-top:25px;
 }
 .store-address span{
@@ -114,7 +115,7 @@ body {
 .store-number{
     width: 30px;
     height:30px;
-    background-color: #454E53;
+    background-color: rgb(36, 39, 41);
     color: white;
     display:flex;
     justify-content: center;
@@ -152,4 +153,19 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.store-container-background{
+    width:100%;
+    display:flex;
+    padding-left:8px;
+    padding-right:8px;
+    margin-top:12px;
+    margin-bottom:12px;
+    border-radius:18px;
+    transition: all .2s ease-in-out; 
+
+}
+.store-container-background:hover{
+    background-color: rgba(255, 255, 255, .4);
+    
 }

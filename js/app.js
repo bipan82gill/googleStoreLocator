@@ -57,7 +57,9 @@ function clearLocations(){
                     var phone =store.phoneNumber;
                     storesHtml +=`
                     <div class ="store-container">
+                    <div class ="store-container-background">
                         <div class ="store-info-container">
+                       
                             <div class ="store-address">
                                  <span>${address[0]}</span>
                                  <span>${address[1]}</span>
@@ -68,6 +70,7 @@ function clearLocations(){
                             <div class ="store-number">
                              ${index+1}
                             </div>
+                        </div>
                         </div>
                     </div>`
                 });
