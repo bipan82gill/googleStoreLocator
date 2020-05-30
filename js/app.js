@@ -12,7 +12,7 @@ var infoWindow;
           });
           infoWindow = new google.maps.InfoWindow();
           searchStores()
-          setOnClickListener()
+         
         }
 
         function searchStores(){
@@ -31,6 +31,7 @@ var infoWindow;
             clearLocations();
             displayStores(foundStores);
             showStoresMarkers(foundStores);
+            setOnClickListener();
         }
 function clearLocations(){
     infoWindow.close();
@@ -45,8 +46,7 @@ function clearLocations(){
             storeElements.forEach(function(elem, index){
                 elem.addEventListener('click', function(){
                     google.maps.event.trigger(markers[index], 'click');
-                   console.log(elem)
-                })
+               })
             });
         }
 
