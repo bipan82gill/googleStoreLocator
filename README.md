@@ -1,2 +1,2 @@
 # googleStoreLocator
-AIzaSyBWXxrqQO2EbwyqGLx-Nbpijc6wrxxwTm4
+ https://bipan82gill.github.io/googleStoreLocator/
