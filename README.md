@@ -11,7 +11,8 @@ HTML, CSS3, JavaScript API
 It helps user to locate StarBucks Stores on Google Map. 
 
 # Demo
-![map1](./images/demo1.png);
+![map1](./images/demo1.png)
+# when user click on Marker then it gives information about name and address of store , phone number etc.
 ![map2](./images/demo2.png)
 =======
  https://bipan82gill.github.io/googleStoreLocator/
