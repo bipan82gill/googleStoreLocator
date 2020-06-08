@@ -1,6 +1,6 @@
 # GoogleStoreLocator
 
-This application is design to Locate Store on Google Map.It displays Location Marks on Map as per Zip Code is enter into search box.It shows information about name and  phone number of store when user click on Marker or store displays into list.
+This application is design to Locate Store on Google Map.It displays Location Marks on Map as per Zip Code is enter into search box.It shows information about name and  phone number of store into Information Window when user click on Marker or store displays into list.
 
 # Technology
 
