@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search store on google map</title>
-    <link rel ="stylesheet" href ="style/style.css">
-    
+    <link rel="stylesheet" href="style/styles.css">
+
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
     <script src="js/store-data.js"></script>
 </head>
+
 <body>
-    <div class ="title">Store Locator</div>
-    <div class ="search-container">
-        <div class ="search">
+    <div class="title">Store Locator</div>
+    <div class="search-container">
+        <div class="search">
             <input id="zip-code" type="text" placeholder="Enter zip">
-            <i class="fas fa-search" onclick ="searchStores()"></i>
+            <i class="fas fa-search" onclick="searchStores()"></i>
         </div>
     </div>
 
-    <div class ="stores-list-container">
-        <div class ="stores-list">
-           
+    <div class="stores-list-container">
+        <div class="stores-list">
+
         </div>
     </div>
 
     <div id="map"></div>
-    <script src ="js/app.js"> </script>
+    <script src="js/app.js"> </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWXxrqQO2EbwyqGLx-Nbpijc6wrxxwTm4&callback=initMap"
-    async defer></script> 
-   
+        async defer></script>
+
 </body>
+
 </html>
