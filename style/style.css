@@ -77,20 +77,20 @@ body {
     bottom:20px;
 } */
 .stores-list-container {
-    width: 400px;
-    background-image: linear-gradient(
-    to right bottom,
-    rgba(126, 213, 111, 0.8),
-    rgba(40, 180, 131, 0.5)
-    );
-    border: 1px solid rgba(0, 0, 0, 0.87);
-    position: absolute;
-    top: 320px;
-    left: 100px;
-    z-index: 40;
-    border-radius: 5px;
-    bottom: 20px;
-    }
+width: 400px;
+background-image: linear-gradient(
+to right bottom,
+rgba(126, 213, 111, 0.8),
+rgba(40, 180, 131, 0.5)
+);
+border: 1px solid rgba(0, 0, 0, 0.87);
+position: absolute;
+top: 320px;
+left: 100px;
+z-index: 40;
+border-radius: 5px;
+bottom: 20px;
+}
 .store-container{
     display:flex;
     border-bottom: 1px solid #979797; 
